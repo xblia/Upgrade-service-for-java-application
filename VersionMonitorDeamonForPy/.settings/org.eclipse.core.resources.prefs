@@ -1,0 +1,10 @@
+eclipse.preferences.version=1
+encoding//deamon/ConfigCenter.py=utf-8
+encoding//deamon/HttpClient.py=utf-8
+encoding//deamon/ILog.py=utf-8
+encoding//deamon/IPyDeamonConstant.py=utf-8
+encoding//deamon/UpgradeDownloadThread.py=utf-8
+encoding//deamon/UpgradePyDeamon.py=utf-8
+encoding//deamon/ZTest.py=utf-8
+encoding/<project>=UTF-8
+encoding/setup.py=utf-8

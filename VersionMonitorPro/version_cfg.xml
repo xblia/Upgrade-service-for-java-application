@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<software-group>
+	<software name="testscript">
+		<latest-version-code>61</latest-version-code>
+		<latest-version>v6.1</latest-version>
+		<latest-version-abspath>/home/xblia2/ReleaseVer/cats_release/TestService</latest-version-abspath>
+		<latest-version-startup>TestServerClientV1.0.jar</latest-version-startup>
+		<latest-version-detail>
+			<item name="new feature">
+				<detail>1.Version upgrade component has been integrated into the tool.</detail>
+			</item>
+			<item name="fix issue">
+				<detail>1.Resolved bugs.</detail>
+				<detail>2.推荐使用新版本.</detail>
+			</item>
+		</latest-version-detail>
+		<ignore-files>
+			<item>aapt</item>
+			<item>aapt.exe</item>
+			<item>adb</item>
+			<item>adb.exe</item>
+			<item>AdbWinApi.dll</item>
+			<item>AdbWinUsbApi.dll</item>
+		</ignore-files>
+	</software>
+	<software name="pc_tools">
+		<latest-version-code>42</latest-version-code>
+		<latest-version>PC_Tools_V4.2</latest-version>
+		<latest-version-abspath>/home/xblia2/ReleaseVer/cats_release/PC_Tools</latest-version-abspath>
+		<latest-version-startup>PC_Tools.jar</latest-version-startup>
+		<latest-version-detail>
+			<item name="new feature">
+				<detail>Version upgrade component has been integrated into the tool.</detail>
+			</item>
+			<item name="fix issue">
+				<detail>1.Setting重新布局，更直观.</detail>
+				<detail>2.推荐使用新版本.</detail>
+			</item>
+		</latest-version-detail>
+		<ignore-files>
+			<item>aapt</item>
+			<item>aapt.exe</item>
+			<item>adb</item>
+			<item>adb.exe</item>
+			<item>AdbWinApi.dll</item>
+			<item>AdbWinUsbApi.dll</item>
+		</ignore-files>
+	</software>
+	<software name="easy_transfer">
+		<latest-version-code>48</latest-version-code>
+		<latest-version>EasyTransferV4.8</latest-version>
+		<latest-version-abspath>/home/xblia2/ReleaseVer/cats_release/EasyTranfer</latest-version-abspath>
+		<latest-version-startup>EasyTranferX.jar</latest-version-startup>
+		<latest-version-detail>
+			<item name="new feature">
+				<detail>Add LRU clear disk feature.</detail>
+				<detail>Add Tool bar.</detail>
+			</item>
+			<item name="fix issue">
+				<detail>1.发送消息添加附加路径错误.</detail>
+				<detail>2.消息发概率性卡一秒问题.</detail>
+				<detail>3.永久连接，发送消息和文件后不自断开连接.</detail>
+				<detail>4.推荐使用新版本.</detail>
+			</item>
+		</latest-version-detail>
+		<ignore-files>
+			<item>about</item>
+		</ignore-files>
+	</software>
+	<software name="topn_analyzer">
+		<latest-version-code>11</latest-version-code>
+		<latest-version>TopN Analyzer. V1.1</latest-version>
+		<latest-version-abspath>/home/xblia2/ReleaseVer/cats_release/TopNAnalyzer</latest-version-abspath>
+		<latest-version-startup>TopNAnalyzer_v1.1.jar</latest-version-startup>
+		<latest-version-detail>
+			<item name="new feature">
+				<detail>Add md5 columns to excel file</detail>
+			</item>
+			<item name="fix issue">
+				<detail>1.Resolved some bugs.</detail>
+				<detail>2.推荐使用新版本.</detail>
+			</item>
+		</latest-version-detail>
+	</software>
+</software-group>

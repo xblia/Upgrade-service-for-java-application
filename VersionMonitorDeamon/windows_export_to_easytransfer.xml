@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project VersionMonitorDeamon">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="D:/Release_Version/cats_release/EasyTranfer/upgradeDeamon.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.cats.version.deamon.VersionUpgradeDeamonFrame"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/bin"/>
+            <fileset dir="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/bin"/>
+            <fileset dir="E:/SVN_CODE/Code/linux_platform_support/commonlibs/CommonsDefUI/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/libs/fastjson-1.1.28.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/commons-codec-1.9.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/commons-logging-1.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/fluent-hc-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/httpclient-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/httpclient-cache-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/httpclient-win-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/httpcore-4.4.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/httpmime-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/jna-4.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorMsg/http-libs/jna-platform-4.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/libs/fastjson-1.1.28.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/commons-codec-1.9.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/commons-logging-1.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/fluent-hc-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/httpclient-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/httpclient-cache-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/httpclient-win-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/httpcore-4.4.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/httpmime-4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/jna-4.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="E:/SVN_CODE/Code/linux_platform_support/version_upgrade_component/VersionMonitorDeamon/http-libs/jna-platform-4.1.0.jar"/>
+        </jar>
+    </target>
+</project>

@@ -1,0 +1,74 @@
+Request:
+{
+    "clientIp":"XBLIA-PC.ccr.corp.intel.com",
+    "clientName":"xiaobolx",
+    "currVersionCode":49,
+    "currVersionName":"easy_transfer4.9",
+    "msgIdentified":291001960,
+    "msgType":257,
+    "msgid":1,
+    "softName":"easy_transfer"
+}
+
+
+
+Response:
+{
+    "currVersionCode":49,
+    "currVersionName":"easy_transfer4.9",
+    "latestVersionCode":63,
+    "latestVersionName":"EasyTransferV6.3",
+    "msgIdentified":291001960,
+    "msgResult":"SUCC",
+    "msgType":258,
+    "msgid":817560,
+    "needUpdate":"YES",
+    "softName":"easy_transfer",
+    "versionInfoDetail":[
+        {
+            "detail":[
+                "程序员小丫为了修改UI和整体重构优化， 夜夜与代码为伴",
+                "从部门最帅的骚年，熬成了胡子一大把的大叔",
+                "在倒下前小丫拉着我的手说：",
+                ""新版本这么赞，我想发出去看看。"",
+                ".",
+                "所以， 升级!升级!升级! 重要的事情说三遍！."
+            ],
+            "title":"New features"
+        },
+        {
+            "detail":[
+                "1.空文件不切换问题.",
+                "2.发送消息信息被改变问题."
+            ],
+            "title":"Fix issues"
+        }
+    ]
+}
+
+upgrade request:    
+{
+    "latestVersionCode":0,
+    "msgIdentified":291001960,
+    "msgType":513,
+    "msgid":2,
+    "softName":"easy_transfer"
+}
+
+upgrade response
+{
+    "msgIdentified":291001960,
+    "msgResult":"SUCC",
+    "msgType":514,
+    "msgid":830406,
+    "result":"SUCC",
+    "softName":"easy_transfer",
+    "startupName":"EasyTranferX.jar",
+    "updateFilePath":[
+        "/EasyTranfer/upgradeDeamon.jar",
+        "/EasyTranfer/ET_PROPERTIES.properties",
+        "/EasyTranfer/EasyTranferX.jar",
+        "/EasyTranfer/version_cfg.properties"
+    ]
+}
+
