@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//pyversion/ClearTempFiles.py=utf-8
+encoding//pyversion/ConfigCenter.py=utf-8
+encoding//pyversion/HttpClient.py=utf-8
+encoding//pyversion/ILog.py=utf-8
+encoding//pyversion/IMessageDef.py=utf-8
+encoding//pyversion/IVersionInfoProvider.py=utf-8
+encoding//pyversion/PyUtils.py=utf-8
+encoding//pyversion/PyVerFrame.py=utf-8
+encoding//pyversion/PyVersionMonitor.py=utf-8
+encoding//pyversion/UpgradeService.py=utf-8
+encoding//pyversion/UpgradeUI.py=utf-8
+encoding//pyversion/ZTestVersion.py=utf-8
