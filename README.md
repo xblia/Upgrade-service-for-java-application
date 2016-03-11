@@ -8,7 +8,7 @@
   5. 即时性，同时支持上千用户的并发即时版本推送，在局域网可达到20MB/s的速率
   6. 多语言支持，目前支持python和java两种语言的接口，不过你也可以根据已经的接口开发其它语言支持调用
   
-现对其基本工程介绍如下：
+#现对其基本工程介绍如下：
   1. CommonUtils和CommonsDefUI是属于Utils的封装，CommonsDefUI里面有对其Swing UI的定制，使其更优雅
   2. VersionMonitorPro为服务端工程，部署在服务端
   3. VersionMonitorClient为客户端调用接口
@@ -19,14 +19,38 @@
   7. VersionInfoMaintain为版本可视化版本工具
   
 
-服务端部署说明：
-    1. 使用VersionMonitorPro打包可运行的jar并拷贝version_cfg.xml到jar同级目录version_cfg.xml
-    2. version_cfg.xml有可视化工具进行编辑
+#服务端部署说明：
+  1. 使用VersionMonitorPro打包可运行的jar并拷贝version_cfg.xml到jar同级目录version_cfg.xml
+  2. version_cfg.xml有可视化工具进行编辑
     
-可视化编辑工具：
+#可视化编辑工具：
   VersionInfoMaintain为可视化编辑工具，运行其主类为com\versionmaintain\panel\VersionMaintainMainFrame.java
   
-java客户端工程需要引用VersionMonitorClient和VersionMonitorMsg两个工程，将其加入lib
+#java客户端工程需要引用VersionMonitorClient和VersionMonitorMsg两个工程，将其加入lib
 如果使用Eclipse，则Build Path--> Project---> add Project进行加入
 调用形式如下：
-  
+  1. 客户端需要实现一接口：
+    package com.cats.version.client;
+
+    /**
+     * @author xblia2
+     * Jun 9, 2015
+     */
+    public interface IVersionInfoProvider
+    {
+    	String getSoftName();
+    	int getVersionCode();
+    	String getVersionName();
+    }
+    2. 启动服务组件：
+      new ClientVersionMonitor(IVersionInfoProvider).startComponent();
+      
+      
+#python客户端调用方法(python客户端需要使用cx_freeze进行打包导出，并且需要使用wxPython库（其为python的图形化界面库）
+调用时只需要继承一类即可：PyVerFrame
+然后在子类中调用：PyVerFrame.__init__(self,app, None, -1, strTitle, style=style)即可启动服务组件
+
+
+
+#有使用问题都可以联系我：worldandyou@163.com
+
