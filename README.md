@@ -43,7 +43,7 @@ java客户端工程需要引用VersionMonitorClient和VersionMonitorMsg两个工
     	int getVersionCode();
     	String getVersionName();
     }
-    2. 启动服务组件：
+  2. 启动服务组件：
       new ClientVersionMonitor(IVersionInfoProvider).startComponent();
       
       
