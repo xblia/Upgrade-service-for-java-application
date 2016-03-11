@@ -33,10 +33,6 @@ java客户端工程需要引用VersionMonitorClient和VersionMonitorMsg两个工
   1. 客户端需要实现一接口：
     package com.cats.version.client;
 
-    /**
-     * @author xblia2
-     * Jun 9, 2015
-     */
     public interface IVersionInfoProvider
     {
     	String getSoftName();
