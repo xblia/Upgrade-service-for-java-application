@@ -43,8 +43,8 @@ java客户端工程需要引用VersionMonitorClient和VersionMonitorMsg两个工
       new ClientVersionMonitor(IVersionInfoProvider).startComponent();
 
   3. 客户端需要修改服务器的通信地址：
-    a. 在打包为jar时，首次运行为产生一个配置文件在jar同级目录version_cfg.properties，打包更改其地址即可（建议使用这种方式）
-    b. 可在VersionMonitorMsg工程中的Utils的postMsgAndGet的方法中修改(从开闭原则上来说不建议此种方法）
+      a. 在打包为jar时，首次运行为产生一个配置文件在jar同级目录version_cfg.properties，打包更改其地址即可（建议使用这种方式）
+      b. 可在VersionMonitorMsg工程中的Utils的postMsgAndGet的方法中修改(从开闭原则上来说不建议此种方法）
       
       
 #python客户端调用
