@@ -6,7 +6,7 @@
   3. 安全性较高，采用json做为通信交换方式，并验证报文的头信息
   4. 高度可配置性，同一服务器可控制多个软件的版本，全可视化界面配置，可配置软件信息，更新内容特性描述等
   5. 即时性，同时支持上千用户的并发即时版本推送，在局域网可达到20MB/s的速率
-  6. 多语言支持，目前支持python和java两种语言的接口，不过你也可以根据已经的接口开发其它语言支持调用
+  6. 多语言支持，目前支持python和java两种语言的接口，不过你也可以根据现有的接口开发其它语言支持调用
   
 #现对其基本工程介绍如下：
   1. CommonUtils和CommonsDefUI是属于Utils的封装，CommonsDefUI里面有对其Swing UI的定制，使其更优雅
@@ -41,6 +41,10 @@ java客户端工程需要引用VersionMonitorClient和VersionMonitorMsg两个工
     }
   2. 启动服务组件：
       new ClientVersionMonitor(IVersionInfoProvider).startComponent();
+
+  3. 客户端需要修改服务器的通信地址：
+    a. 在打包为jar时，首次运行为产生一个配置文件在jar同级目录version_cfg.properties，打包更改其地址即可（建议使用这种方式）
+    b. 可在VersionMonitorMsg工程中的Utils的postMsgAndGet的方法中修改(从开闭原则上来说不建议此种方法）
       
       
 #python客户端调用
