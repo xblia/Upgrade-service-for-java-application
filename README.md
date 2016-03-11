@@ -26,7 +26,8 @@
 #可视化编辑工具：
   VersionInfoMaintain为可视化编辑工具，运行其主类为com\versionmaintain\panel\VersionMaintainMainFrame.java
   
-#java客户端工程需要引用VersionMonitorClient和VersionMonitorMsg两个工程，将其加入lib
+#Java客户端调用
+java客户端工程需要引用VersionMonitorClient和VersionMonitorMsg两个工程，将其加入lib
 如果使用Eclipse，则Build Path--> Project---> add Project进行加入
 调用形式如下：
   1. 客户端需要实现一接口：
@@ -46,11 +47,14 @@
       new ClientVersionMonitor(IVersionInfoProvider).startComponent();
       
       
-#python客户端调用方法(python客户端需要使用cx_freeze进行打包导出，并且需要使用wxPython库（其为python的图形化界面库）
+#python客户端调用
+python客户端调用方法(python客户端需要使用cx_freeze进行打包导出，并且需要使用wxPython库（其为python的图形化界面库）
 调用时只需要继承一类即可：PyVerFrame
 然后在子类中调用：PyVerFrame.__init__(self,app, None, -1, strTitle, style=style)即可启动服务组件
 
 
 
-#有使用问题都可以联系我：worldandyou@163.com
+#联系方式：
+  1. 有使用问题都可以联系我：worldandyou@163.com
+  2. 或者可以在csdn的博客中给我留言: tqtihihc
 
